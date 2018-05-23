@@ -1,20 +1,20 @@
 <template>
   <div>
     <AppHeader />
+    <router-view />
   </div>
 </template>
 
 <script>
-import AppHeader from './components/AppHeader'
+import AppHeader from "./components/AppHeader";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    AppHeader,
+    AppHeader
   }
-}
+};
 </script>
 
 <style>
-
 </style>
