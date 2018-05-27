@@ -5,7 +5,7 @@
         </router-link>
         <div class="right menu">
             <template v-if="isLoggedIn">
-            <router-link to="/gallery" class="ui item">Gallery</router-link>
+            <router-link to="/" class="ui item">Gallery</router-link>
             <router-link to="/upload" class="ui item">Upload</router-link>
             <a href="#" class="ui item" @click.prevent="logout" >Logout</a>
             </template>
