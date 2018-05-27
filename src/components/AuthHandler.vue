@@ -1,17 +1,18 @@
 <template>
-  <div>
-    Please wait...
-  </div>
+    <div>
+        Please wait...
+    </div>
 </template>
 
 
 <script>
-import { mapAcions } from "vuex";
-export default {
-  name: "AuthHandler",
-  methods: mapAcions(["finalazeLogin"]),
-  created() {
-    this.finalizeLogin();
-  }
-};
+  import { mapActions } from "vuex";
+
+  export default {
+    name:    "AuthHandler",
+    methods: mapActions(['finalizeLogin']),
+    created() {
+      this.finalizeLogin(window.location.hash);
+    }
+  };
 </script>
